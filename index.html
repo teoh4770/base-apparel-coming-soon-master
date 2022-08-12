@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo-container__inner-container">
+          <img src="images/logo.svg" alt="" class="logo" />
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <figure class="hero__img-container mobile">
+        <img src="images/hero-mobile.jpg" alt="hero image" class="hero__img" />
+      </figure>
+      <figure class="hero__img-container desktop">
+        <img src="images/hero-desktop.jpg" alt="hero image" class="hero__img" />
+      </figure>
+      <div class="hero__content-container">
+        <div class="logo-container-desktop">
+          <img src="images/logo.svg" alt="" class="logo" />
+        </div>
+        <div class="inner-container-desktop">
+          <h2 class="hero__content-heading"><span>We're</span> coming soon</h2>
+          <p class="hero__content-subheading">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="hero__call-to-action">
+            <div class="hero__call-to-action__inner-container">
+              <label for="email"></label>
+              <input
+                type="email"
+                name="Email Address"
+                id="email"
+                placeholder="Email Address"
+                class="js-email-input"
+                title="Please provide a valid email address"
+                pattern=".+@gmail\.com"
+              />
+              <div class="hero__call-to-action__icon js-email-icon"></div>
+              <button type="submit" class="js-submit-btn">
+                <img src="images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="hero__call-to-action__message js-email-message">
+              <!-- wait to be filled -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
